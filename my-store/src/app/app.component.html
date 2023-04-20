@@ -1,4 +1,6 @@
-<h1>Hola mundo </h1>
+<h1>Eventos</h1>
+
+
 <button [disabled]="btnDisabled">Enviar</button>
 <button (click)="toggleButton()">Toggle Button</button>
 <p>Edad {{person.age}}</p>
@@ -6,6 +8,8 @@
 <div class="box" (scroll)="onScroll($event)">
 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A magni labore ratione tenetur, esse, ipsum voluptatum ipsam, nam porro officiis tempora! Perspiciatis, laboriosam. Recusandae voluptates repellendus veritatis at voluptatum consectetur!</p>
 </div>
+<p>Nombre{{person.name}}</p>
+<input type="text" [value]="person.name"(keyup)="changeName($event)"/>
 <hr>
 <input type="text" [value]="person.name"/>
 <progress max="100" [value]="person.age"></progress>
